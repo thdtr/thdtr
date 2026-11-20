@@ -103,9 +103,10 @@ def uptime(a, b):
 
 FONT = ("ui-monospace,'SF Mono',SFMono-Regular,'Cascadia Mono',Consolas,"
         "'DejaVu Sans Mono','Liberation Mono',Menlo,monospace")
-PALETTE = {  # dark = glowing green phosphor, light = ink on a printout
-    "dark": dict(bg="#07110a", fg="#5dff8a", dim="#2f8a4b", hi="#5dff8a"),
-    "light": dict(bg="#f4efe1", fg="#1f5e33", dim="#7f9c83", hi="#0d361b"),
+PALETTE = {  # colors taken from Ed's hair in the avatar (#CF5243)
+    # dark = glowing red phosphor, light = red ink on a warm printout
+    "dark": dict(bg="#140a08", fg="#ff6b57", dim="#a8483b", hi="#ff6b57", scan="#000000"),
+    "light": dict(bg="#f7ede8", fg="#a63a2d", dim="#c48a7f", hi="#6b1f16", scan="#e8d4cb"),
 }
 W, PAD, FS, LH = 700, 28, 13.5, 19
 
@@ -166,7 +167,7 @@ text {{ font-size: {FS}px; fill: {P['fg']}; }}
 </style>
 <defs>{glow}
 <radialGradient id="vig" cx="50%" cy="50%" r="75%"><stop offset="60%" stop-color="#000" stop-opacity="0"/><stop offset="100%" stop-color="#000" stop-opacity="{0.55 if dark else 0.07}"/></radialGradient>
-<pattern id="scan" width="4" height="3" patternUnits="userSpaceOnUse"><rect width="4" height="1" fill="{'#000' if dark else '#d9d2bd'}" opacity="{0.35 if dark else 0.25}"/></pattern>
+<pattern id="scan" width="4" height="3" patternUnits="userSpaceOnUse"><rect width="4" height="1" fill="{P['scan']}" opacity="{0.35 if dark else 0.25}"/></pattern>
 <clipPath id="screen"><rect width="{W}" height="{H}" rx="18"/></clipPath></defs>
 <g clip-path="url(#screen)">
 <rect width="{W}" height="{H}" fill="{P['bg']}"/>
