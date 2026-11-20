@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="322" viewBox="0 0 700 322" xml:space="preserve" role="img" aria-label="Thiago Dutra (thdtr): AI enthusiast and open-source programmer from Brazil">
+<title>thdtr: htop</title>
+<style>
+text, tspan { white-space: pre; font-family: ui-monospace,'SF Mono',SFMono-Regular,'Cascadia Mono',Consolas,'DejaVu Sans Mono','Liberation Mono',Menlo,monospace; }
+text { font-size: 13.5px; fill: #1f5e33; }
+.dim { fill: #7f9c83; }
+.hi { fill: #0d361b; font-weight: 700; }
+.inv { fill: #f4efe1; font-weight: 700; }
+.invl { fill: #f4efe1; opacity: .75; }
+</style>
+<defs>
+<radialGradient id="vig" cx="50%" cy="50%" r="75%"><stop offset="60%" stop-color="#000" stop-opacity="0"/><stop offset="100%" stop-color="#000" stop-opacity="0.07"/></radialGradient>
+<pattern id="scan" width="4" height="3" patternUnits="userSpaceOnUse"><rect width="4" height="1" fill="#d9d2bd" opacity="0.25"/></pattern>
+<clipPath id="screen"><rect width="700" height="322" rx="18"/></clipPath></defs>
+<g clip-path="url(#screen)">
+<rect width="700" height="322" fill="#f4efe1"/>
+<g>
+<rect x="0" y="123" width="700" height="19" fill="#1f5e33"/>
+<rect x="0" y="275" width="700" height="19" fill="#1f5e33"/>
+<text x="28" y="42"><tspan class="hi">  AI</tspan>[<tspan class="hi">|||||||||||||||||||||||||||||</tspan><tspan class="dim">  97.0%</tspan>]   <tspan class="dim">Tasks: </tspan><tspan class="hi">87 repos, 5 public</tspan></text>
+<text x="28" y="61"><tspan class="hi"> OSS</tspan>[<tspan class="hi">||||||||||||||||||||||</tspan><tspan class="dim">         72.0%</tspan>]   <tspan class="dim">Commits: </tspan><tspan class="hi">1,183</tspan><tspan class="dim">  PRs: </tspan><tspan class="hi">58</tspan></text>
+<text x="28" y="80"><tspan class="hi">Rust</tspan>[<tspan class="hi">|||||||||||||||||||</tspan><tspan class="dim">            64.0%</tspan>]   <tspan class="dim">Load: </tspan><tspan class="hi">654 contributions (2026)</tspan></text>
+<text x="28" y="99"><tspan class="hi">Mate</tspan>[<tspan class="hi">||||||||||||||||||||||||||</tspan><tspan class="dim">     88.0%</tspan>]   <tspan class="dim">Uptime: </tspan><tspan class="hi">4y 6m 23d</tspan></text>
+<text x="28" y="137"><tspan class="inv">  PID USER   LANG    LICENSE     S  COMMAND</tspan></text>
+<text x="28" y="156"><tspan class="dim"> 1337 </tspan>thdtr  Rust    <tspan class="dim">MIT         </tspan><tspan class="hi">R  </tspan><tspan class="hi">bia    </tspan>code editor</text>
+<text x="28" y="175"><tspan class="dim"> 2048 </tspan>thdtr  Rust    <tspan class="dim">Apache-2.0  </tspan><tspan class="hi">R  </tspan><tspan class="hi">dindim </tspan>expense tracker</text>
+<text x="28" y="194"><tspan class="dim"> 4242 </tspan>thdtr  JS      <tspan class="dim">custom      </tspan><tspan class="hi">R  </tspan><tspan class="hi">vixe   </tspan>ASCII platformer</text>
+<text x="28" y="213"><tspan class="dim">31337 </tspan>thdtr  agent   <tspan class="dim">-           </tspan><tspan class="dim">S  </tspan>claude --code-with thdtr</text>
+<text x="28" y="251"><tspan class="dim">Thiago Dutra · AI enthusiast &amp; open-source programmer · Brazil</tspan></text>
+<text x="28" y="289"><tspan class="inv">F1</tspan><tspan class="invl">Help   </tspan><tspan class="inv">F2</tspan><tspan class="invl">Setup  </tspan><tspan class="inv">F3</tspan><tspan class="invl">Search </tspan><tspan class="inv">F5</tspan><tspan class="invl">Fork   </tspan><tspan class="inv">F6</tspan><tspan class="invl">Clone  </tspan><tspan class="inv">F7</tspan><tspan class="invl">Issue  </tspan><tspan class="inv">F8</tspan><tspan class="invl">PR     </tspan><tspan class="inv">F10</tspan><tspan class="invl">Quit   </tspan></text>
+</g>
+<rect width="700" height="322" fill="url(#scan)"/>
+<rect width="700" height="322" fill="url(#vig)"/>
+</g>
+</svg>

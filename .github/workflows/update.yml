@@ -1,0 +1,38 @@
+name: Update profile card
+
+on:
+  schedule:
+    - cron: "17 6 * * *" # daily
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [generate.py]
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Render SVGs
+        env:
+          # PROFILE_TOKEN: a read-only token that can see your private repos, so they count too.
+          # Without it the job skips, so the card never drops to public-only numbers.
+          GH_TOKEN: ${{ secrets.PROFILE_TOKEN }}
+        run: |
+          if [ -z "$GH_TOKEN" ]; then
+            echo "::warning::PROFILE_TOKEN secret is not set, skipping the update."
+            exit 0
+          fi
+          python3 generate.py
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dark_mode.svg light_mode.svg
+          git diff --cached --quiet || { git commit -m "Update profile stats"; git push; }
