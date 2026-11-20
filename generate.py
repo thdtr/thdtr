@@ -6,7 +6,9 @@ public repos are counted.
 
     GH_TOKEN=$(gh auth token) python3 generate.py
 """
+import hashlib
 import json
+import re
 import os
 import urllib.request
 from datetime import date, datetime, timezone
@@ -187,8 +189,16 @@ def main():
     stats = fetch_stats(today)
     print(json.dumps(stats))
     rows = build_rows(stats, today)
+    digest = hashlib.sha256()
     for mode in ("dark", "light"):
-        (HERE / f"{mode}_mode.svg").write_text(render(rows, mode), encoding="utf-8")
+        svg = render(rows, mode)
+        digest.update(svg.encode())
+        (HERE / f"{mode}_mode.svg").write_text(svg, encoding="utf-8")
+    # Point the README at ?v=<hash> so caches never serve an old card.
+    readme = HERE / "README.md"
+    version = digest.hexdigest()[:10]
+    text = re.sub(r"(_mode\.svg)(\?v=[0-9a-f]+)?", rf"\1?v={version}", readme.read_text(encoding="utf-8"))
+    readme.write_text(text, encoding="utf-8")
 
 
 if __name__ == "__main__":
