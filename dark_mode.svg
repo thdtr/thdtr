@@ -18,9 +18,9 @@ text { font-size: 13.5px; fill: #ff6b57; }
 <rect x="0" y="123" width="700" height="19" fill="#ff6b57"/>
 <rect x="0" y="275" width="700" height="19" fill="#ff6b57"/>
 <text x="28" y="42"><tspan class="hi">  AI</tspan>[<tspan class="hi">|||||||||||||||||||||||||||||</tspan><tspan class="dim">  97.0%</tspan>]   <tspan class="dim">Tasks: </tspan><tspan class="hi">90 repos, 6 public</tspan></text>
-<text x="28" y="61"><tspan class="hi"> OSS</tspan>[<tspan class="hi">||||||||||||||||||||||</tspan><tspan class="dim">         72.0%</tspan>]   <tspan class="dim">Commits: </tspan><tspan class="hi">1,222</tspan><tspan class="dim">  PRs: </tspan><tspan class="hi">69</tspan></text>
-<text x="28" y="80"><tspan class="hi">Rust</tspan>[<tspan class="hi">|||||||||||||||||||</tspan><tspan class="dim">            64.0%</tspan>]   <tspan class="dim">Load: </tspan><tspan class="hi">723 contributions (2026)</tspan></text>
-<text x="28" y="99"><tspan class="hi">Mate</tspan>[<tspan class="hi">||||||||||||||||||||||||||</tspan><tspan class="dim">     88.0%</tspan>]   <tspan class="dim">Uptime: </tspan><tspan class="hi">4y 6m 29d</tspan></text>
+<text x="28" y="61"><tspan class="hi"> OSS</tspan>[<tspan class="hi">||||||||||||||||||||||</tspan><tspan class="dim">         72.0%</tspan>]   <tspan class="dim">Commits: </tspan><tspan class="hi">1,224</tspan><tspan class="dim">  PRs: </tspan><tspan class="hi">71</tspan></text>
+<text x="28" y="80"><tspan class="hi">Rust</tspan>[<tspan class="hi">|||||||||||||||||||</tspan><tspan class="dim">            64.0%</tspan>]   <tspan class="dim">Load: </tspan><tspan class="hi">731 contributions (2026)</tspan></text>
+<text x="28" y="99"><tspan class="hi">Mate</tspan>[<tspan class="hi">||||||||||||||||||||||||||</tspan><tspan class="dim">     88.0%</tspan>]   <tspan class="dim">Uptime: </tspan><tspan class="hi">4y 6m 30d</tspan></text>
 <text x="28" y="137"><tspan class="inv">  PID USER   LANG    LICENSE     S  COMMAND</tspan></text>
 <text x="28" y="156"><tspan class="dim"> 1337 </tspan>thdtr  Rust    <tspan class="dim">MIT         </tspan><tspan class="hi">R  </tspan><tspan class="hi">bia    </tspan>code editor</text>
 <text x="28" y="175"><tspan class="dim"> 2048 </tspan>thdtr  Rust    <tspan class="dim">Apache-2.0  </tspan><tspan class="hi">R  </tspan><tspan class="hi">dindim </tspan>expense tracker</text>
